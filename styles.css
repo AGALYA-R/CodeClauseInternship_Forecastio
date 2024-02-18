@@ -1,0 +1,96 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('https://i.redd.it/8hr60jort3w91.gif');
+    background-size: cover;
+}
+
+.container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9); 
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: darkblue;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px; /* Adjust height as needed */
+    transition: transform 0.3s; /* Add transition for smooth transform */
+}
+
+h1:hover {
+    transform: scale(1.1); /* Scale up on hover */
+}
+input[type="text"] {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#weatherInfo {
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.weather-item {
+    margin-bottom: 10px;
+}
+
+.weather-item p {
+    margin: 5px 0;
+    color: #333;
+}
+
+.weather-item p strong {
+    font-weight: bold;
+}
+
+.weather-item .temperature {
+    font-size: 24px;
+}
+
+.weather-item .description {
+    font-style: italic;
+}
+
+@media (max-width: 400px) {
+    .container {
+        max-width: 100%;
+        margin: 10px;
+    }
+
+    input[type="text"] {
+        width: 100%;
+    }
+
+    button {
+        width: 100%;
+    }
+}
